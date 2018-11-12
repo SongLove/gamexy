@@ -1,0 +1,27 @@
+background-url($url)
+  background-image url('../../assets/img/' + $url)
+  background-repeat no-repeat
+  background-size 100% 100%
+background-url2($url)
+   background-image url('../assets/img/' + $url)
+  background-repeat no-repeat
+  background-size 100% 100%
+$textColor= #8a302d
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+.page-enter-active, .page-leave-active
+  transition: all 0.3s
+.page-enter, .page-leave-to
+  transform: translate3d(100%, 0, 0)
+
+.page1-enter-active, .page1-leave-active
+  transition: all 0.3s
+.page1-enter, .page1-leave-to
+  transform: translate3d(0, 100%, 0)
+
+[v-cloak]
+  display none
